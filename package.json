@@ -1,15 +1,14 @@
 {
-  "name": "web-slides",
+  "name": "01-web",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
+    "build": "slidev build --base /web-slides/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^0.43.15",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-default": "^0.21.2"
   }
 }
