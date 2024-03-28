@@ -36,6 +36,8 @@ drawings:
   persist: false
   presenterOnly: false
   syncAll: true
+
+hideInToc: true
 ---
 
 
@@ -53,6 +55,13 @@ drawings:
 
 ---
 layout: center
+hideInToc: true
+---
+
+# Table of Contents
+
+<Toc columns="2" maxDepth="1" mode="all" class="toc-list"/>
+
 ---
 
 ## Table of Contents
@@ -67,18 +76,13 @@ layout: center
 - Frontend, backend, and full stack web development
 - Road map.
 
----
-layout: center
----
-
-# Course Overview
 
 
 ---
 
-# Course Website
+## Course Website
 
-[https://cpit405.gitlab.io/](https://cpit405.gitlab.io/)
+[https://cpit405.gitlab.io/ ↗️](https://cpit405.gitlab.io/)
 
 - Check the course website every day! (I'm serious)
 - To make it easy for you to track topics and schedule:
@@ -91,19 +95,26 @@ layout: center
   - They are just websites, so no special software is needed.
 
 ---
+layout: full
+---
+
+# Course Road Map
+
+<br>
+
+![](https://cpit405.gitlab.io/images/cpit-405-course-overview.png)
+
+---
 layout: center
 ---
 
-
 # Course Syllabus
 
-[https://cpit405.gitlab.io/syllabus/](https://cpit405.gitlab.io/syllabus/)
-
-
+[https://cpit405.gitlab.io/syllabus/ ↗️](https://cpit405.gitlab.io/syllabus/)
 
 ---
 
-# Teaching Philosophy
+## Teaching Philosophy
 
 - Use MS Teams for communication and assignment submissions
 - I'm here for you!
@@ -116,32 +127,27 @@ layout: center
   - You will be asked to apply what you've learned in the class
 - Coding is like cooking. You won't learn by just watching, learn by doing!
 
-
-
 ---
 
-
-# Late Policy, Use of AI tools, and Special Accommodations
+## Late Policy, Use of AI tools, and Special Accommodations
 - Assignments submitted late will incur a 25% penalty.
 - You may submit an assignment or a lab activity up to one week late.
   - after that the submission will not be graded and you’ll receive 0 points for it.
   - **Exception**: Every student gets three free late passes, allowing you to submit a maximum of 3 assignments up to 1 week past the due date without penalty.
 - If you discover that you cannot attend the midterm or final exam, you will need to get in touch with me ASAP before the midterm or final exam to make other arrangements.
-- Read the syllabus [statement on the use of generative AI tools](https://cpit405.gitlab.io/syllabus/#policy-on-the-use-of-generative-ai-tools)
+- Read the syllabus [statement on the use of generative AI tools ↗️](https://cpit405.gitlab.io/syllabus/#policy-on-the-use-of-generative-ai-tools)
 - Disability Accommodations:
   - Please be open in communicating any requests for accommodations due to disability no later than the second week of the semester.
 
+---
+layout: center
+---
+
+# The Internet and the Web
 
 ---
 
-# Protocols of the Web
-- Protocols dictate how browsers and servers talk, enabling data transfer and website rendering
-- It's very important for web developers to understand web related protocols and the inner workings of the web and internet
-- Understanding protocols and how the web works will help you build efficient, secure, and usable web applications
-
----
-
-# What is the Internet?
+## What is the Internet?
 - The Internet is a large interconnected computer networks using the Internet protocol suite (TCP/IP).
 - It's a network of networks that enables communication and data exchange between devices
 - The Internet is the infrastructure for global communication
@@ -155,7 +161,7 @@ layout: center
 
 ---
 
-# Internet History
+## Internet History
 - In the 1960s, computers were large and require physical access to execute tasks.
 - The U.S. Defense Department funded projects to enable communication in response to the Soviet Union's advanced projects.
 -  The US Department of Defense created an agency called the ARPANET (Advanced Research Projects Agency Network), the network that ultimately evolved into what we now know as the Internet.
@@ -167,7 +173,7 @@ layout: center
 
 ---
 
-# Internet and Web History Timeline
+## Internet and Web History Timeline
 
 - **1969**: ARPANET, the precursor to the Internet, was launched by the U.S. Department of Defense.
 - **1974**: The term "Internet" was first used to refer to a global network of networks.
@@ -181,7 +187,7 @@ layout: center
 
 ---
 
-# What is the web?
+## What is the web?
 - The World Wide Web (WWW or the web) is an information system that enables the sharing of documents and other web content over the Internet using the Hypetext Transfer protocol (HTTP).
 - Openness and accessibility: The web provides user-friendly access to information on the internet
   - Relies on web browsers for display
@@ -196,6 +202,14 @@ layout: center
   - and many more
 
 ---
+
+# Protocols of the Web
+- Protocols dictate how browsers and servers talk, enabling data transfer and website rendering
+- It's very important for web developers to understand web related protocols and the inner workings of the web and internet
+- Understanding protocols and how the web works will help you build efficient, secure, and usable web applications
+
+---
+
 
 # The OSI model
 
@@ -224,7 +238,7 @@ layout: center
 
 ---
 
-# OSI model and TCP/IP Suite
+## OSI model and TCP/IP Suite
 - The OSI model is a theoretical, conceptual, seven-layer reference model.
 - While the OSI model is valuable for educational purposes and understanding network principles, it's not directly implemented in real-world networks.
 - The TCP/IP suite is a concrete implementation of some of the concepts outlined in the conceptual framework defined in the OSI model.
@@ -247,7 +261,7 @@ layout: center
 
 ---
 
-# HTTP Version
+## HTTP Version
 - HTTP Version (e.g., HTTP/1.1, HTTP/2, HTTP/3) specifies the version of the Hypertext Transfer Protocol being used.
 
 <div v-click>
@@ -282,7 +296,7 @@ layout: center
 
 ---
 
-# URL Components
+## URL Components
 
 
 - **Protocol**: Examples: http, https, ftp, and file.
@@ -294,16 +308,16 @@ layout: center
 
 ---
 
-# HTTP Methods (I)
+## HTTP Methods (I)
 - HTTP method is a verb used in an HTTP request to indicate the action to be performed by the server on the identified resource URL.
   - GET, POST, PUT, PATH, DELETE, OPTIONS, HEAD
-- We will use the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) to demonstrate HTTP methods and working with APIs using [Postman](https://www.postman.com/). 
+- We will use the [JSONPlaceholder API ↗️](https://jsonplaceholder.typicode.com/) to demonstrate HTTP methods and working with APIs using [Postman ↗️](https://www.postman.com/). 
   - It is a simple/fake RESTful API that developers can use for testing and learning how to consume APIs. 
   - It provides endpoints for typical HTTP methods like GET, POST, PUT, and DELETE.
 
 ---
 
-# HTTP Methods (II)
+## HTTP Methods (II)
 
 | Method | Description | JSONPlaceholder API Example |
 |--------|-------------|----------------------------|
@@ -313,11 +327,9 @@ layout: center
 | DELETE | Deletes a resource. | `DELETE https://jsonplaceholder.typicode.com/posts/1` |
 | PATCH  | Updates an existing resource partially. | `PATCH https://jsonplaceholder.typicode.com/posts/1`. The body should contain the updated resource fields. |
 
-
-
 ---
 
-# HTTP headers
+## HTTP headers
 - HTTP request headers are extra lines of data included in a request by the client (such as a web browser)
 - HTTP response headers are extra lines of data included in a response by the server.
 - Their purpose is to provide additional information for context and instructions enabling the server or client to understand the request or response better.
@@ -330,7 +342,7 @@ layout: center
 
 ---
 
-# HTTP body
+## HTTP body
 - The HTTP body is the part of an HTTP request or response that contains the actual data to be sent or received
 - In a request, the body may contain data that the client wants to send to the server. Example: login form data.
 - In a response, the body may contain data that the server has sent to the client. Example: the HTML of the requested page.
@@ -340,7 +352,7 @@ The Content-Type header is often used to indicate the format of the data in the 
 
 ---
 
-# HTTP Status Codes (I)
+## HTTP Status Codes (I)
 - An HTTP status code is a server's response to a client's request sent over the HTTP protocol. 
 - These status codes are three-digit numbers where the first digit defines the class of the response. 
 - **1xx (Informational)**: The request was received, and the process is continuing.
@@ -351,7 +363,7 @@ The Content-Type header is often used to indicate the format of the data in the 
 
 ---
 
-# HTTP Status Codes (II)
+## HTTP Status Codes (II)
 
 | Status Code | Class | Description | Example |
 |-------------|-------|-------------| ------- |
@@ -363,7 +375,7 @@ The Content-Type header is often used to indicate the format of the data in the 
 
 ---
 
-# HTTP Status Codes (II)
+## HTTP Status Codes (III)
 
 | Status Code | Class | Description | Example |
 |-------------|-------|-------------| ------- |
@@ -374,7 +386,7 @@ The Content-Type header is often used to indicate the format of the data in the 
 
 ---
 
-# HTTP Status Codes (III)
+# HTTP Status Codes (IV)
 
 | Status Code | Class | Description | Example |
 |-------------|-------|-------------| ------- |
@@ -387,7 +399,7 @@ The Content-Type header is often used to indicate the format of the data in the 
 layout: center
 ---
 
-# HTTP RestFULL API Demo
+## HTTP RestFULL API Demo
 
 Let's see a demo of working with a RESTful API that uses HTTP requests to GET, PUT, POST, and DELETE data using Postman.
 
@@ -396,11 +408,13 @@ Let's see a demo of working with a RESTful API that uses HTTP requests to GET, P
 layout: center
 ---
 
-# Demystifying the Internet and the Web through Fatima's Shoe Shopping Journey
+# How the Internet and the Web work?
+
+#### Demystifying the Internet and the Web through Fatima's Shoe Shopping Journey
 
 ---
 
-# Fatima's Story (I)
+## Fatima's Story (I)
 
 #### Fatima would like to purchase shoes from Amazon.
 1. **URL (Uniform Resource Locator)**: She opens her web browser (e.g., Chrome).
@@ -414,7 +428,7 @@ layout: center
 
 ---
 
-# Fatima's Story (II)
+## Fatima's Story (II)
 
 4. **TLS Handshake**: Since the website uses https, the browser establishes a secure connection with the web server using Transport Layer Security (TLS).
     - TLS handshake takes place between the web server and client (web browser).
@@ -428,7 +442,7 @@ layout: center
 
 ---
 
-# Fatima's Story (III)
+## Fatima's Story (III)
 5. **Transmission Control Protocol (TCP)**: The browser establishes a TCP connection with Amazon's web server using the IP address.
     - TCP/IP ensures reliable data transmission by breaking information into packets and reassembling them correctly at the other end.
     - The browser sends an HTTP GET request to Amazon's **web server**.
@@ -438,7 +452,7 @@ layout: center
 
 ---
 
-# Fatima's Story (IV)
+## Fatima's Story (IV)
 
 6. **HTTP Request**:
     - HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext (i.e., "web pages")
@@ -453,7 +467,7 @@ layout: center
 
 ---
 
-# Fatima's Story (V)
+## Fatima's Story (V)
 
 8. **Rendering the webpage: HTML, CSS, and JS**
     - The browser receives the HTTP response and starts rendering the webpage. 
@@ -503,9 +517,9 @@ layout: two-cols-header
 
 ---
 
-# Commonly used Web Application Architecture
+## Commonly used Web Application Architecture
 
-## The three-tier architecture 
+### The three-tier architecture 
 - The three-tier architecture is a well-established software application architecture that organizes applications into three tiers:
   - **Presentation Tier (front-end)**: This is the front-end layer of the architecture, which is visible to the user. It's typically built using HTML, CSS, and JavaScript.
   - **Application Tier (back-end)**: This is the middle layer that handles the business logic of the application. It's typically built using server-side languages like PHP, Java, Node.js, Python, etc.
@@ -513,7 +527,7 @@ layout: two-cols-header
 
 ---
 
-## Web Technologies
+# Web Technologies
 - **HTML**: The markup language for creating web pages. It provides the structure of a webpage.
 - **CSS**: A stylesheet language used for styling of a webpage.
 - **JavaScript**: A high-level, interpreted programming language provides an interactive web experience.
@@ -543,13 +557,7 @@ layout: center
 
 ---
 
-# Course Road Map
-
-- ![](https://cpit405.gitlab.io/images/cpit-405-course-overview.png)
-
----
-
-# Wrap up and what’s next
+## Wrap up and what’s next
 - We have seen how the Internet and the Web work
 - We have learned about the following topics:
   - Course Overview
@@ -560,4 +568,4 @@ layout: center
   - Web Application Architecture
   - Web Technologies and Tools
   - Frontend, backend, and full stack web development
-- Coming up next: Use HTML to structure your web pages! 🤩
+- Coming up next: [Use HTML to structure your web pages ↗️](https://cpit405.github.io/html-slides/)! 🤩
