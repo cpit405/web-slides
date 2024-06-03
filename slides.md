@@ -410,13 +410,13 @@ layout: center
 
 # How the Internet and the Web work?
 
-#### Demystifying the Internet and the Web through Fatima's Shoe Shopping Journey
+#### Demystifying the Internet and the Web through Hind's Shoe Shopping Journey
 
 ---
 
-## Fatima's Story (I)
+## Hind's Story (I)
 
-#### Fatima would like to purchase shoes from Amazon.
+#### Hind would like to purchase shoes from Amazon.
 1. **URL (Uniform Resource Locator)**: She opens her web browser (e.g., Chrome).
     - In the address bar, she types the URL, _https://amazon.com_.
     - URL (Uniform Resource Locator) is the human-readable address.
@@ -424,11 +424,11 @@ layout: center
     - The browser sends a DNS query to a DNS server via User Datagram Protocol (UDP) on port 53.
     - DNS acts like the phonebook for the internet, translating the URL into a numerical IP address.
     - The DNS server responds with the IP address of the Amazon's web server.
-    - Now the browser knows where to send its HTTP/HTTPS request to fetch the home page of the online store Fatima trying to access.
+    - Now the browser knows where to send its HTTP/HTTPS request to fetch the home page of the online store Hind trying to access.
 
 ---
 
-## Fatima's Story (II)
+## Hind's Story (II)
 
 4. **TLS Handshake**: Since the website uses https, the browser establishes a secure connection with the web server using Transport Layer Security (TLS).
     - TLS handshake takes place between the web server and client (web browser).
@@ -442,17 +442,17 @@ layout: center
 
 ---
 
-## Fatima's Story (III)
+## Hind's Story (III)
 5. **Transmission Control Protocol (TCP)**: The browser establishes a TCP connection with Amazon's web server using the IP address.
     - TCP/IP ensures reliable data transmission by breaking information into packets and reassembling them correctly at the other end.
     - The browser sends an HTTP GET request to Amazon's **web server**.
     - The web server is the system program running on Amazon's server.
-    - The web server processes these requests and responds with an HTTP status code, headers, and body payload with the appropriate HTML, CSS, and JavaScript files, which the browser then renders into the webpage that Fatima sees.
+    - The web server processes these requests and responds with an HTTP status code, headers, and body payload with the appropriate HTML, CSS, and JavaScript files, which the browser then renders into the webpage that Hind sees.
 
 
 ---
 
-## Fatima's Story (IV)
+## Hind's Story (IV)
 
 6. **HTTP Request**:
     - HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext (i.e., "web pages")
@@ -467,7 +467,7 @@ layout: center
 
 ---
 
-## Fatima's Story (V)
+## Hind's Story (V)
 
 8. **Rendering the webpage: HTML, CSS, and JS**
     - The browser receives the HTTP response and starts rendering the webpage. 
@@ -476,8 +476,8 @@ layout: center
     - The JavaScript makes the page interactive.
 
 9. **HTTP Requests**
-    - As Fatima interacts with the webpage (clicking on different links), her browser sends additional HTTP requests to the server, which responds back with the appropriate data.
-    - When Fatima leaves the page or closes her browser, the TCP connection that was established with the server is terminated.
+    - As Hind interacts with the webpage (clicking on different links), her browser sends additional HTTP requests to the server, which responds back with the appropriate data.
+    - When Hind leaves the page or closes her browser, the TCP connection that was established with the server is terminated.
     - If the browser or the server is idle for a certain period of time, they might decide to close the TCP/TLS connection to save resources.
 
 ---
