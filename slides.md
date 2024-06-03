@@ -111,6 +111,8 @@ layout: center
 # Course Syllabus
 
 [https://cpit405.gitlab.io/syllabus/ ↗️](https://cpit405.gitlab.io/syllabus/)
+- Read it! It serves as the contract between us.
+- > Be prepared, there will be a quiz on the syllabus in the next lecture.
 
 ---
 
@@ -134,7 +136,7 @@ layout: center
 - You may submit an assignment or a lab activity up to one week late.
   - after that the submission will not be graded and you’ll receive 0 points for it.
   - **Exception**: Every student gets three free late passes, allowing you to submit a maximum of 3 assignments up to 1 week past the due date without penalty.
-- If you discover that you cannot attend the midterm or final exam, you will need to get in touch with me ASAP before the midterm or final exam to make other arrangements.
+- If you discover that you cannot attend the midterm or final exam, you will need to provide me with relevant documentation ASAP before the midterm or final exam to make other arrangements.
 - Read the syllabus [statement on the use of generative AI tools ↗️](https://cpit405.gitlab.io/syllabus/#policy-on-the-use-of-generative-ai-tools)
 - Disability Accommodations:
   - Please be open in communicating any requests for accommodations due to disability no later than the second week of the semester.
