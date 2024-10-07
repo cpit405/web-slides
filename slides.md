@@ -2,8 +2,8 @@
 # try also 'default' to start simple
 theme: default
 presenter: true
-title: 'The Internet and the Web'
-titleTemplate: '%s - CPIT-405'
+title: "The Internet and the Web"
+titleTemplate: "%s - CPIT-405"
 # apply any windi css classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -11,15 +11,15 @@ highlighter: shiki
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
-info: | 
-    The Internet and the Web
+info: |
+  The Internet and the Web
 # page transition
 transition: slide-left
 # use UnoCSS
 css: unocss
 # Make content selectable/copyable
 selectable: true
-favicon: '/images/favicon.ico'
+favicon: "/images/favicon.ico"
 # Make slides downloadable as PDF
 download: true
 exportFilename: js-slides
@@ -35,7 +35,7 @@ drawings:
   enabled: true
   persist: false
   presenterOnly: false
-  syncAll: true
+  syncAll: false
 
 hideInToc: true
 ---
