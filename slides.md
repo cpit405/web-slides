@@ -50,7 +50,7 @@ hideInToc: true
 
 
 <div class="absolute left-30px bottom-30px">
-<p>Last updated: Spring 24</p>
+<p>Last updated: Spring 25</p>
 </div>
 
 ---
@@ -422,65 +422,65 @@ layout: center
 1. **URL (Uniform Resource Locator)**: She opens her web browser (e.g., Chrome).
     - In the address bar, she types the URL, _https://amazon.com_.
     - URL (Uniform Resource Locator) is the human-readable address.
-3. **DNS (Domain Name System)**: The browser uses DNS behind the scenes.
-    - The browser sends a DNS query to a DNS server via User Datagram Protocol (UDP) on port 53.
-    - DNS acts like the phonebook for the internet, translating the URL into a numerical IP address.
-    - The DNS server responds with the IP address of the Amazon's web server.
+2. **DNS (Domain Name System)**: The browser uses DNS behind the scenes.
+    - The browser sends a DNS query to a DNS server, which is often via UDP on port 53.
+    - DNS acts like the phone book for websites, translating the domain in the URL into a numerical IP address.
+    - The DNS server responds with the IP address of Amazon's web server.
     - Now the browser knows where to send its HTTP/HTTPS request to fetch the home page of the online store Hind trying to access.
 
 ---
 
 ## Hind's Story (II)
-
-4. **TLS Handshake**: Since the website uses https, the browser establishes a secure connection with the web server using Transport Layer Security (TLS).
-    - TLS handshake takes place between the web server and client (web browser).
-    - The browser intitates the TLS handshake by sending a request to the server.
-    - The server responds with a message that includes protocol version, session ID, and digital certificate, which contains the server's public key.
-    - The browser verifies the server's certificate with the **certificate authority (CA)** to ensure it's valid and trustworthy.
-    - If the CA is valid, the browser generates a session key and encrypts it using the server's public key from the certificate.
-    - The server uses its private key to decrypt the session key sent by the browser.
-    - The server and the browser now have a shared symmetric encryption key which they will use to encrypt and decrypt data exchanged during the secure session.
-
+3. **Establishing a TCP connection**: The browser establishes a TCP connection with Amazon's web server to the resolved IP address on port 443 (default for HTTPS).
+    - TCP/IP ensures reliable data transmission by breaking information into packets and reassembling them correctly at the other end.
+    - The browser initiates the TCP session with Amazon's **web server** using three-way handshake (SYN, SYN-ACK, ACK).
+      - The web server is the system program running on Amazon's physical server to deliver content to users.
+    - At this stage, the connection exists at the TCP layer,
 
 ---
 
 ## Hind's Story (III)
-5. **Transmission Control Protocol (TCP)**: The browser establishes a TCP connection with Amazon's web server using the IP address.
-    - TCP/IP ensures reliable data transmission by breaking information into packets and reassembling them correctly at the other end.
-    - The browser sends an HTTP GET request to Amazon's **web server**.
-    - The web server is the system program running on Amazon's server.
-    - The web server processes these requests and responds with an HTTP status code, headers, and body payload with the appropriate HTML, CSS, and JavaScript files, which the browser then renders into the webpage that Hind sees.
 
+4. **HTTPS (TLS Handshake)**: Since the website uses https, the browser establishes a secure connection with the web server using TLS (Transport Layer Security).
+  - HTTPS = HTTP over TLS.
+  - TLS handshake takes place between the web server and client (web browser).
+  - The browser initiates the TLS handshake by sending a request to the server.
+  - The server responds with a message that includes protocol version, session ID, and digital certificate, which contains the server's public key.
+  - The browser verifies the server's certificate with the **certificate authority (CA)** to ensure it's valid and trustworthy.
+  - If the CA is valid, the browser generates a session key and encrypts it using the server's public key from the certificate.
+  - The server uses its private key to decrypt the session key sent by the browser.
+  - The server and the browser now have a shared symmetric encryption key which they will use to encrypt and decrypt data exchanged during the secure session.
 
 ---
 
 ## Hind's Story (IV)
 
-6. **HTTP Request**:
-    - HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext (i.e., "web pages")
-    - The browser sends an HTTP GET request to the server, asking for the webpage associated with the URL (homepage).
+5. **HTTP Request**:
+  - HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext (i.e., "web pages")
+  - The browser sends an HTTP GET request to the server, asking for the webpage associated with the URL (homepage).
     - An HTTP request includes an HTTP method (verb) which tells the server what kind of request it is (e.g., GET, POST, PUT, DELETE, etc.).
-
-
-7. **HTTP Response**:
-    - The server processes the request and sends back an HTTP response, which includes the status code, header, and additional payload (HTML, CSS, and JavaScript files) for the webpage.
-    - Amazon's server returns HTTP status code 200, which means it was successful along with the webpage content.
-
+    - The request may include additional headers (e.g., `User-Agent`) to provide the server with additional information about the client making the request.
 
 ---
 
 ## Hind's Story (V)
 
-8. **Rendering the webpage: HTML, CSS, and JS**
-    - The browser receives the HTTP response and starts rendering the webpage. 
-    - The HTML provides the structure of the page
-    - The CSS styles the page
-    - The JavaScript makes the page interactive.
+6. **HTTP Response**:
+  - The web server processes the request and responds with an HTTP status code, headers, and body payload with the appropriate HTML, CSS, and JavaScript files.
+      - The HTML provides the structure of the page
+      - The CSS styles the page
+      - The JavaScript makes the page interactive.
+    - The browser then starts rendering the payload into a webpage.
+    - Now, Hind can interact with the web page and buy shoes 👠.
 
-9. **HTTP Requests**
-    - As Hind interacts with the webpage (clicking on different links), her browser sends additional HTTP requests to the server, which responds back with the appropriate data.
-    - When Hind leaves the page or closes her browser, the TCP connection that was established with the server is terminated.
-    - If the browser or the server is idle for a certain period of time, they might decide to close the TCP/TLS connection to save resources.
+---
+
+## Hind's Story (VI)
+
+7. **HTTP Requests**
+  - As Hind interacts with the webpage (clicking on different links), her browser sends additional HTTP requests to the server, which responds back with the appropriate response headers and payload.
+  - Hind's browser may keep the TCP connection open to improve performance and reduce the overhead of establishing a new TCP and TLS handshakes.
+  - If the browser or the server is idle for a certain period of time, either side may decide to close the TCP/TLS connection to save resources.
 
 ---
 layout: two-cols-header
@@ -540,11 +540,12 @@ layout: two-cols-header
 ---
 
 # Web Tools
-- **Text Editor/IDE**: Tools like Visual Studio Code for writing and editing code.
-- **Version Control Systems**: Tools like Git for tracking changes in source code during web development.
+- **Text Editor/IDE**: Code editors like [Visual Studio Code](https://code.visualstudio.com/) for writing and editing code.
+- **Version Control Systems**: Tools like [Git](https://git-scm.com/) for tracking changes in source code during web development.
 - **Web Browsers Dev Tools**: All modern web browsers come equipped with a robust set of tools for developers. These tools offer a variety of functionalities, including the ability to examine the HTML, CSS, and JavaScript currently loaded on a page, as well as getting performance metrics.
-- **Web Servers**: Tools like Apache and Nginx for hosting and serving web applications. VS Code Live Server for running a local development server.
-- **Deployment Platforms**: GitHub pages for hosting static web pages, AWS, Google Cloud, Microsoft Azure, or Heroku for deploying dynamic web applications.
+  - Examples: [Chrome Dev tools](https://developer.chrome.com/docs/devtools) and [Firefox DevTools](https://firefox-source-docs.mozilla.org/devtools-user/index.html)
+- **Web Servers**: Tools like [VS Code Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for running a local development server, and [Apache](https://httpd.apache.org/) and [Nginx](https://nginx.org/en/) for serving production ready web applications.
+- **Deployment Platforms**: [GitHub pages](https://pages.github.com/) for hosting static web pages, AWS, Google Cloud, Microsoft Azure, or Heroku for deploying dynamic web applications.
 
 
 ---
