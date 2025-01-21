@@ -64,22 +64,6 @@ hideInToc: true
 
 ---
 
-## Table of Contents
-
-- Course Overview
-- Introduction to the Internet
-- The Web and the Internet
-- Protocols of the Web
-- Static and Dynamic Web Sites
-- Web Application Architecture
-- Web Technologies and Tools
-- Frontend, backend, and full stack web development
-- Road map.
-
-
-
----
-
 ## Course Website
 
 [https://cpit405.gitlab.io/ ↗️](https://cpit405.gitlab.io/)
@@ -526,6 +510,13 @@ layout: two-cols-header
   - **Presentation Tier (front-end)**: This is the front-end layer of the architecture, which is visible to the user. It's typically built using HTML, CSS, and JavaScript.
   - **Application Tier (back-end)**: This is the middle layer that handles the business logic of the application. It's typically built using server-side languages like PHP, Java, Node.js, Python, etc.
   - **Data Tier**: This is the data store layer that stores and retrieves data. This layer interacts with the database using CRUD operations (Create, Read, Update, Delete). It often involves a database management system like MySQL, PostgreSQL, or MongoDB.
+
+---
+
+## The three-tier architecture
+<br>
+
+![The three-tier architecture](/images/three-tier-architecture.png)
 
 ---
 
