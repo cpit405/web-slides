@@ -260,16 +260,15 @@ layout: center
 - **HTTP/2**: It extended the usage of persistent connections by multiplexing many concurrent requests/responses through a single TCP/IP connection.
   - Released in 2015 to address the limitations of HTTP/1.1.
   - Uses a more efficient binary format for data transfer compared to plain text in HTTP/1.1.
-  - Header Compression: Reduces data transmission by compressing request and response headers
+  - Header Compression: Reduces data transmission by compressing request and response headers.
 </div>
 <div v-click>
 
-- **HTTP/3**: It does not use TCP/IP connections but QUIC + UDP
-  - Released in 2022
-  - It uses QUIC, which is a new transport protocol designed for mobile-heavy Internet usage.
-  - UDP enables faster connections and user experience.
-  - It addresses issues related to performance when a smartphone switches from one network to another
+- **HTTP/3**: It uses QUIC, a multiplexed transport protocol based on UDP, instead of TCP.
+  - HTTP/3 was introduced in 2022 and is implemented as standard in all major Web browsers.
   - It aims to improve security with built-in encryption.
+  - It addresses issues related to performance when a smartphone switches from one network to another
+  
 </div>
 
 ---
