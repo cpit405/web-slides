@@ -21,7 +21,7 @@ css: unocss
 selectable: true
 favicon: "/images/favicon.ico"
 # Make slides downloadable as PDF
-download: true
+download: false
 exportFilename: web-slides
 # export:
 #   format: pdf
