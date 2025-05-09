@@ -4,6 +4,10 @@ theme: default
 presenter: true
 title: "The Internet and the Web"
 titleTemplate: "%s - CPIT-405"
+head:
+  - tag: meta
+    name: google-site-verification
+    content: "RRQqw_JyNC8cFLtIIO1i4iCmYIGq1gAkZNofyHYRAcU"
 # apply any windi css classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
