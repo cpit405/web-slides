@@ -5,13 +5,14 @@
   "scripts": {
     "build": "slidev build --base /web-slides/",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export --format pdf --per-slide",
+    "export-pptx": "slidev export --format pptx --per-slide"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.15",
-    "@slidev/theme-default": "^0.21.2"
+    "@slidev/cli": "^51.6.0",
+    "@slidev/theme-default": "^0.25.0"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.38.1"
+    "playwright-chromium": "^1.52.0"
   }
 }

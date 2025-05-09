@@ -22,13 +22,13 @@ selectable: true
 favicon: "/images/favicon.ico"
 # Make slides downloadable as PDF
 download: true
-exportFilename: js-slides
-export:
-  format: pdf
-  timeout: 30000
-  dark: false
-  withClicks: false
-  withToc: false
+exportFilename: web-slides
+# export:
+#   format: pdf
+#   timeout: 30000
+#   dark: false
+#   withClicks: false
+#   withToc: false
 # enable slide recording and drawing
 record: build
 drawings:
