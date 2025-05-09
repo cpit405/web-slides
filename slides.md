@@ -21,8 +21,8 @@ css: unocss
 selectable: true
 favicon: "/images/favicon.ico"
 # Make slides downloadable as PDF
-download: false
-exportFilename: web-slides
+download: true
+exportFilename: https://cpit405.github.io/web-slides/downloads/web-slides.pdf
 # export:
 #   format: pdf
 #   timeout: 30000

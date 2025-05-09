@@ -5,8 +5,8 @@
   "scripts": {
     "build": "slidev build --base /web-slides/",
     "dev": "slidev --open",
-    "export": "slidev export --format pdf --per-slide",
-    "export-pptx": "slidev export --format pptx --per-slide"
+    "export": "slidev export --format pdf --per-slide --output web-slides.pdf",
+    "export-pptx": "slidev export --format pptx --per-slide --output web-slides.pptx"
   },
   "dependencies": {
     "@slidev/cli": "^51.6.0",
