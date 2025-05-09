@@ -22,7 +22,7 @@ selectable: true
 favicon: "/images/favicon.ico"
 # Make slides downloadable as PDF
 download: true
-exportFilename: https://cpit405.github.io/web-slides/downloads/web-slides.pdf
+exportFilename: https://cpit405.github.io/web-slides/downloads/web-slides
 # export:
 #   format: pdf
 #   timeout: 30000
